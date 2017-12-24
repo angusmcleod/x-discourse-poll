@@ -1,0 +1,3 @@
+en:
+  site_settings:
+    poll_allow_moderators_to_delete_votes: "Allow moderators to delete all poll votes of a user"

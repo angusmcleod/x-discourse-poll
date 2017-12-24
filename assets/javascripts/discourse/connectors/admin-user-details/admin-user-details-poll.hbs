@@ -1,0 +1,22 @@
+<section class='details'>
+  <h1>{{i18n 'admin.user.poll'}}</h1>
+  <div class='display-row'>
+    <div class='field'>{{i18n 'admin.user.poll_votes'}}</div>
+    <div class='value'>
+      {{#if model.poll_votes_count}}
+        {{model.poll_votes_count}}
+      {{else}}
+        &mdash;
+      {{/if}}
+    </div>
+    <div class='controls'>
+      {{#if model.can_delete_all_poll_votes}}
+        {{#if model.poll_votes_count}}
+          {{d-button class="btn-danger" action="deleteAllPollVotes" icon="trash-o" label="admin.user.delete_all_poll_votes"}}
+        {{/if}}
+      {{else}}
+        {{model.deleteAllPollVotesExplanation}}
+      {{/if}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+en:
+  admin_js:
+    admin:
+      logs:
+        staff_actions:
+          actions:
+            delete_poll_votes: "delete poll votes"
+      user:
+        poll: "Polls"
+        poll_votes: "Votes"
+        delete_all_poll_votes: "Delete all poll votes"
+        delete_all_poll_votes_confirm_MF: "You are about to delete {VOTES, plural, one {1 vote} other {# votes}}. Are you sure?"
+        delete_poll_votes_forbidden_because_staff: "Can't delete all poll votes of admins and moderators."
+        delete_poll_votes_admin_only: "Only admins can delete all poll votes"

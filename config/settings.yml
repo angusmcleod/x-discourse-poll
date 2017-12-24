@@ -1,0 +1,4 @@
+plugins:
+  poll_allow_moderators_to_delete_votes:
+    default: false
+    client: true
