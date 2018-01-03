@@ -5,7 +5,7 @@ export default {
   initialize(container) {
     const user = container.lookup('current-user:main');
 
-    if (user.staff) {
+    if (user && user.staff) {
       withPluginApi('0.8.12', api => {
         api.modifyClass('model:admin-user', {
           deleteAllPollVotesExplanation: function() {
